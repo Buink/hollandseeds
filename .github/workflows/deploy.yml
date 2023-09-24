@@ -37,5 +37,5 @@ jobs:
             - name: Deploy to pages 🚀
               uses: JamesIves/github-pages-deploy-action@v4
               with:
-                branch: gh-pages
-                folder: dist
+                  branch: gh-pages
+                  folder: dist
