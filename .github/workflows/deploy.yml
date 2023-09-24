@@ -5,6 +5,7 @@ on:
             - main
 jobs:
     build-and-test:
+        name: Build and test
         runs-on: ubuntu-latest
         concurrency: ci-${{ github.ref }}
         steps:
@@ -35,7 +36,7 @@ jobs:
 
     deploy-to-pages:
         - name: Deploy to pages 🚀
-          needs: [build-and-test]
+          needs: [ build-and-test ]
           uses: JamesIves/github-pages-deploy-action@v4
           with:
               branch: gh-pages
