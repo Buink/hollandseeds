@@ -1,4 +1,5 @@
 <template>
+    <h2>This is test site for auto deploys</h2>
   <div>Categories:</div>
   <p v-if="!categories">No categories</p>
   <ul v-else>
