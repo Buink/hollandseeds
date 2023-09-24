@@ -34,7 +34,7 @@ jobs:
               run: npm run build
 
     deploy-to-pages:
-        - name: Deploy 🚀
+        - name: Deploy to pages 🚀
           needs: [build-and-test]
           uses: JamesIves/github-pages-deploy-action@v4
           with:
